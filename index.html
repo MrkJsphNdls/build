@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer; /* Change cursor to pointer for clickable links */
+        }
+
+        main {
+            display: flex;
+            margin: 20px;
+        }
+
+        article {
+            flex: 3;
+            margin-right: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            flex: 2;
+            margin-right: 20px;
+        }
+
+        aside {
+            flex: 1;
+            background: #e2e2e2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function handleNavClick(event) {
+            const target = event.target.innerText;
+
+            if (target === "Home") {
+                // Reload the page
+                location.reload();
+            } else if (target === "About") {
+                // Show an alert message
+                alert("This Web page is a sample of Semantic HTML");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Basic Webpage</h1>
+        <p>A simple web page that shows what Semantic HTML is.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="handleNavClick(event)">Home</a></li>
+            <li><a href="#" onclick="handleNavClick(event)">About</a></li>
+            <li><a href="#mailto:leesinandales@gmail.com">Contact Me here</a>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Understanding Semantic HTML</h2>
+            <img src="https://th.bing.com/th/id/OIP.GL-F4hV3_wX2mQKb-LHWHwHaEK?w=321&h=180&c=7&r=0&o=5&pid=1.7" alt="Semantic elements in HTML" />
+            <p>Semantic HTML is a way of writing HTML that emphasizes the meaning of the content...</p>
+        </article>
+
+        <section>
+            <h2>Latest Articles</h2>
+            <article>
+                <h3>The Importance of Semantic HTML</h3>
+                <p> Semantic HTML shifts the focus from how something look to what something means...</p>
+            </article>
+            <article>
+        </section>
+
+        <aside>
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="#link1">https://www.codecademy.com/resources/blog/semantic-html/</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Basic Webpage. All rights reserved.</p>
+        <p>Follow me on <a href="#https://github.com/MrkJsphNdls">Github</a>
+    </footer>
+
+</body>
+</html>
